@@ -43,6 +43,7 @@ if (someValue){
     console.log("someValue has a message! It is: \n" + someValue);
 }
 
+// Equality checking
 if (someValue == true){
     console.log("the someValue string equalled a true bollean value");
 
@@ -59,3 +60,28 @@ if (someValue) {
     console.log("tada!"")
 }
 */
+
+let choice = prompt("What is your favourite colour?")
+switch (choice) {
+    case "blue":
+        alert("No way..Thats the colour of the sky!!");
+        break;
+    case "green":
+        alert("Thats not very creative.");
+        break;
+    case "red":
+        alert("Thats a speedy colour");
+        break;
+    default:
+        alert("...that doesn't seem like a cool colour");
+        break;
+}
+
+let ternaryResult = true ? console.log("true is truthy") : console.log("It was falsy");
+
+let ifElseResult = null;
+if (true){
+    ifElseResult = consol.log("true is truthy");
+} else {
+    ifElseResult = console.log("it was falsy");
+}
